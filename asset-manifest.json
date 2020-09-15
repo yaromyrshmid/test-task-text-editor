@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/test-task-text-editor/static/css/main.075c6c49.chunk.css",
+    "main.js": "/test-task-text-editor/static/js/main.a9e7233b.chunk.js",
+    "main.js.map": "/test-task-text-editor/static/js/main.a9e7233b.chunk.js.map",
+    "runtime-main.js": "/test-task-text-editor/static/js/runtime-main.e1027218.js",
+    "runtime-main.js.map": "/test-task-text-editor/static/js/runtime-main.e1027218.js.map",
+    "static/js/2.67605ba5.chunk.js": "/test-task-text-editor/static/js/2.67605ba5.chunk.js",
+    "static/js/2.67605ba5.chunk.js.map": "/test-task-text-editor/static/js/2.67605ba5.chunk.js.map",
+    "index.html": "/test-task-text-editor/index.html",
+    "precache-manifest.6dc174848799f8ee9cbbdae2bb243b68.js": "/test-task-text-editor/precache-manifest.6dc174848799f8ee9cbbdae2bb243b68.js",
+    "service-worker.js": "/test-task-text-editor/service-worker.js",
+    "static/css/main.075c6c49.chunk.css.map": "/test-task-text-editor/static/css/main.075c6c49.chunk.css.map",
+    "static/js/2.67605ba5.chunk.js.LICENSE.txt": "/test-task-text-editor/static/js/2.67605ba5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e1027218.js",
+    "static/js/2.67605ba5.chunk.js",
+    "static/css/main.075c6c49.chunk.css",
+    "static/js/main.a9e7233b.chunk.js"
+  ]
+}
