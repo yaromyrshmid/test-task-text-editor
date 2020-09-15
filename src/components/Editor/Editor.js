@@ -104,7 +104,6 @@ const Editor = () => {
     window.getComputedStyle(parent).getPropertyValue(property);
 
   const removeDuplicatedNodeObjects = (nodeArr) => {
-    console.log(nodeArr);
     return nodeArr.reduce((accumulator, currentElement) => {
       const lastElement = accumulator[accumulator.length - 1];
       if (
