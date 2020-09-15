@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useRef, useEffect, useState } from "react";
 import BackGroundColor from "./Controls/BackGroundColor";
 import Color from "./Controls/Color";
@@ -31,28 +32,31 @@ const Editor = () => {
         handleEditorContentChange
       );
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Controls change events
   useEffect(() => {
     editor.current.focus();
     document.execCommand("fontName", false, fontFamily);
+    handleEditorContentChange();
   }, [fontFamily]);
 
   useEffect(() => {
     editor.current.focus();
     document.execCommand("fontSize", false, fontSize);
+    handleEditorContentChange();
   }, [fontSize]);
 
   useEffect(() => {
     editor.current.focus();
     document.execCommand("foreColor", false, color);
+    handleEditorContentChange();
   }, [color]);
 
   useEffect(() => {
     editor.current.focus();
     document.execCommand("hiliteColor", false, backgroundColor);
+    handleEditorContentChange();
   }, [backgroundColor]);
 
   // Handle JSON creation
@@ -100,9 +104,11 @@ const Editor = () => {
     window.getComputedStyle(parent).getPropertyValue(property);
 
   const removeDuplicatedNodeObjects = (nodeArr) => {
+    console.log(nodeArr);
     return nodeArr.reduce((accumulator, currentElement) => {
       const lastElement = accumulator[accumulator.length - 1];
       if (
+        accumulator.length > 1 &&
         lastElement &&
         currentElement.fontFamily ===
           accumulator[accumulator.length - 1].fontFamily &&
